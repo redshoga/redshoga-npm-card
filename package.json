@@ -1,0 +1,46 @@
+{
+  "name": "redshoga",
+  "version": "1.6.0",
+  "description": "A personal card for @redshoga",
+  "main": "/bin/card.js",
+  "bin": {
+    "bitandbang": "./bin/card.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/redshoga/redshoga.git"
+  },
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "node build.js",
+    "dev": "npm run build && node ./bin/card.js",
+    "lint": "standard",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "card",
+    "npm",
+    "npm card",
+    "npx",
+    "npx card",
+    "business card"
+  ],
+  "author": "redshoga <yui.ichioka.contact@gmail.com> (https://redshoga.github.io/)",
+  "license": "MIT",
+  "files": [
+    "bin/card.js",
+    "bin/output"
+  ],
+  "devDependencies": {
+    "boxen": "^2.1.0",
+    "chalk": "^2.4.1",
+    "standard": "^12.0.1"
+  },
+  "bugs": {
+    "url": "https://github.com/redshoga/redshoga/issues"
+  },
+  "dependencies": {},
+  "publishConfig": {
+    "registry": "https://npm.registry.github.com/"
+  }
+}
